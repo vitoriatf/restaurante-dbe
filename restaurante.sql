@@ -43,3 +43,11 @@ INSERT INTO produtos (id, tipo, nome, descricao, imagem, preco) VALUES ('23', 'S
 INSERT INTO produtos (id, tipo, nome, descricao, imagem, preco) VALUES ('24', 'Sobremesas', 'Zeppole', 'Bolinhos fritos de massa doce polvilhados com açúcar.', 'S-zeppole.png', '9.95');
 
 select * from produtos;
+#delete from produtos;
+update produtos set imagem = concat("../img/",imagem);
+
+select * from usuario;
+
+
+alter table usuario add perfil varchar(50) default 0;
+update usuario set perfil = 'admin' where email = 'abc@ifsp.edu.br';
